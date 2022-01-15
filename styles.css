@@ -30,7 +30,6 @@ ul {
 
 p {
   font-weight: 500;
-  align-items: center;
 }
 
 body {
@@ -155,7 +154,7 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 50px) {
   .container {
     width: 375px;
     margin: 0 auto 1rem;
