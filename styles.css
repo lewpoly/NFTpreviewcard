@@ -33,11 +33,16 @@ p {
 }
 
 body {
+  align-items: center;
   font-family: 'Outfit';
   font-size: 18px;
   background-color: var(--main-bg);
   color: hsl(215, 51%, 70%, 100%);
   padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
@@ -64,7 +69,7 @@ body {
   z-index: 999;
   border-radius: 10px;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .container .equil div:hover {
@@ -82,7 +87,7 @@ body {
 .container h2 {
   color: var(--white);
   margin: 1.5rem 0.5rem 0.5rem 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .container h2:hover {
@@ -137,7 +142,7 @@ body {
 .container .avatar p span {
   color: var(--white);
   font-weight: 400;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .container .avatar p span:hover {
@@ -154,7 +159,7 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 50px) {
+@media (min-width: 375px) {
   .container {
     width: 375px;
     margin: 0 auto 1rem;
